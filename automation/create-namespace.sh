@@ -41,5 +41,12 @@ oc apply -f ${PWD}/boutique-quota.yaml
 # 
 # Apply autoscaling for the frontend service
 oc apply -f ${PWD}/frontend-hpa.yaml
+oc apply -f ${PWD}/cartservice-hpa.yaml
+oc apply -f ${PWD}/recomservice-hpa.yaml
+oc apply -f ${PWD}/adservice-hpa.yaml
+oc apply -f ${PWD}/checkoutservice-hpa.yaml
+oc apply -f ${PWD}/shippingservice-hpa.yaml
+oc apply -f ${PWD}/redis-hpa.yaml
+oc apply -f ${PWD}/productcatalog-hpa.yaml
 
 
